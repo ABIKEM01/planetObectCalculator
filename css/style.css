@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Global*/
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+    color: #fff;
+}
+
+/*End of Global*/
+h1 {
+    font-size: 2.2rem;
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.search_nav {
+    margin-top: 5rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+input,
+select,
+button {
+    font-size: 0.5em;
+    padding: 1% 1.2%;
+}
+
+button {
+    background-color: rgba(16, 79, 196, 0.959);
+    color: #fff;
+    font-weight: bolder;
+}
+
+.image_container {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000057;
+}
+
+.image {
+    width: auto;
+    height: 100px;
+}
+
+#answerimage {
+    /* margin-top: 6rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: bold;
+}
+
+#resultContainer {
+    /* display: flex; */
+    margin-top: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#resultContainer>p {
+    padding-top: 1rem;
+}
+
+#result {
+    margin-bottom: 1rem;
+    /* margin-right: 3rem; */
+}
+
+footer {
+    font-size: 1.5rem;
+}
+
+@media(max-width: 520px) {
+    .image_container {
+        flex-direction: column;
+        margin-top: 0rem;
+    }
+
+    .search_nav {
+        flex-direction: column;
+    }
+
+    input,
+    select {
+        margin-bottom: 3px;
+        color: white;
+        background-color: black;
+    }
+
+    #answerimage {
+        /* margin-top: 6rem; */
+        margin: 0px 0px 20px 40px;
+        /* position: relative; */
+    }
+
+    h1 {
+        font-size: 1.5rem;
+
+    }
+
+    .image {
+        width: auto;
+        height: 10px;
+    }
+
+    input,
+    select,
+    button {
+        font-size: 0.5em;
+        height: 3rem;
+        padding: 1% 1.2%;
+        width: 60%;
+        text-align: center;
+        align-self: center;
+        margin-bottom: 4px;
+    }
+}
